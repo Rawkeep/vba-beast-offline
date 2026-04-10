@@ -17,7 +17,7 @@
 <script src="lib/chart.min.js"></script>
 <script src="lib/jspdf.min.js"></script>
 <script src="lib/jspdf-autotable.min.js"></script>
-  <script type="module" crossorigin src="./assets/index-GLCl8F0G.js"></script>
+  <script type="module" crossorigin src="./assets/index-CnTV9jkx.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-gUDyytOR.css">
 <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script></head>
 <body>
@@ -246,7 +246,10 @@
 <button class="b bo bs" onclick="csAddRow()">+ Regel hinzufügen</button>
 <button class="b bo bs" onclick="csAddNew()">+ Neue Spalte</button>
 <span style="font:600 11px var(--mono);color:var(--ora)">Case Else →</span>
-<input type="text" id="cs-else" placeholder="Default-Wert oder {Spalte}" style="width:170px" title="Wird geschrieben wenn keine Regel passt">
+<span style="font:10px var(--mono);color:var(--tx3)">in</span>
+<select id="cs-else-tgt" style="width:100px"></select>
+<span style="font:10px var(--mono);color:var(--tx3)">schreibe</span>
+<input type="text" id="cs-else" placeholder="Default-Wert oder {Spalte}" style="width:140px" title="Wird geschrieben wenn keine Regel passt">
 </div>
 <div class="row" style="margin-top:10px">
 <button class="b bpk" onclick="CS_RUN()">⚡ SELECT CASE ausführen</button>
@@ -273,7 +276,10 @@ Beispiel: Land=DE UND Betrag&gt;1000 → schreibe <code>{Kunde} Premium</code>
 <button class="b bo bs" onclick="ieAddElseIf()">+ IF / ElseIf Block</button>
 <button class="b bo bs" onclick="ieAddNew()">+ Neue Spalte</button>
 <span style="font:600 11px var(--mono);color:var(--ora);margin-left:8px">Else →</span>
-<input type="text" id="ie-else" placeholder="Sonst-Wert oder {Spalte}" style="width:160px">
+<span style="font:10px var(--mono);color:var(--tx3)">in</span>
+<select id="ie-else-tgt" style="width:100px"></select>
+<span style="font:10px var(--mono);color:var(--tx3)">schreibe</span>
+<input type="text" id="ie-else" placeholder="Sonst-Wert oder {Spalte}" style="width:130px">
 </div>
 <div class="row" style="margin-top:10px">
 <button class="b bora" onclick="IE_RUN()">⚡ IF/ELSE ausführen</button>
@@ -441,7 +447,10 @@ Beispiel: Land=DE UND Betrag&gt;1000 → schreibe <code>{Kunde} Premium</code>
 <button class="b bo bs" onclick="swAddRule()">+ Regel</button>
 <button class="b bo bs" onclick="swAddNew()">+ Neue Spalte</button>
 <span style="font:600 11px var(--mono);color:var(--ora)">Else →</span>
-<input type="text" id="sw-else" placeholder="Default oder {Spalte}" style="width:140px">
+<span style="font:10px var(--mono);color:var(--tx3)">in</span>
+<select id="sw-else-tgt" style="width:100px"></select>
+<span style="font:10px var(--mono);color:var(--tx3)">schreibe</span>
+<input type="text" id="sw-else" placeholder="Default oder {Spalte}" style="width:120px">
 </div>
 <div class="row" style="margin-top:8px">
 <button class="b bcyn" onclick="SW_RUN()">⚡ SWITCH ausführen</button>
