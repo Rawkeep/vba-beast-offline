@@ -2,10 +2,34 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="0;url=offline.html">
-<title>VBA BEAST — Weiterleitung...</title>
+<title>VBA BEAST V3 — Offline</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#0d0f14;color:#ccc;font-family:system-ui,-apple-system,sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;text-align:center}
+  .box{max-width:480px;padding:40px}
+  h1{color:#f0a500;font-size:28px;margin-bottom:12px}
+  p{font-size:14px;line-height:1.6;margin-bottom:16px;color:#999}
+  code{background:#1a1d25;padding:3px 8px;border-radius:4px;font-size:13px;color:#22d3ee}
+  .step{background:#1a1d25;border:1px solid #2a2d35;border-radius:8px;padding:16px;margin:12px 0;text-align:left}
+  .step strong{color:#f0a500}
+  .n{display:inline-block;background:#f0a500;color:#000;width:22px;height:22px;border-radius:50%;text-align:center;line-height:22px;font-weight:700;font-size:12px;margin-right:8px}
+</style>
 </head>
-<body style="background:#0d0f14;color:#ccc;font-family:system-ui;display:flex;align-items:center;justify-content:center;height:100vh;margin:0">
-<p>Weiterleitung zu <a href="offline.html" style="color:#22d3ee">VBA BEAST</a>...</p>
+<body>
+<div class="box">
+  <h1>VBA BEAST V3</h1>
+  <p>Die App braucht einen lokalen Server.<br>So startest du sie:</p>
+  <div class="step">
+    <p><span class="n">1</span><strong>macOS:</strong> Doppelklick auf <code>START.command</code></p>
+  </div>
+  <div class="step">
+    <p><span class="n">2</span><strong>Windows:</strong> Doppelklick auf <code>START.bat</code></p>
+  </div>
+  <div class="step">
+    <p><span class="n">3</span><strong>Manuell:</strong> Im Terminal:<br>
+    <code style="display:block;margin-top:8px">cd dist && python3 -m http.server 8080</code><br>
+    Dann öffne <code>http://localhost:8080</code></p>
+  </div>
+</div>
 </body>
 </html>
